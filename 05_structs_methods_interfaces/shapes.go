@@ -21,7 +21,7 @@ type Shape interface {
 	Area() float64
 }
 
-//rectangle methods
+// rectangle methods
 func (r Rectangle) Perimeter() float64 {
 	return (r.Width + r.Height) * 2
 }
@@ -30,7 +30,7 @@ func (r Rectangle) Area() float64 {
 	return r.Width * r.Height
 }
 
-//perimeter methods
+// perimeter methods
 func (c Circle) Perimeter() float64 {
 	return c.Radius * 2
 }
@@ -39,7 +39,7 @@ func (c Circle) Area() float64 {
 	return math.Pi * c.Radius * c.Radius
 }
 
-//triangle methods
+// triangle methods
 func (t Triangle) Perimeter() float64 {
 	return t.Base + t.Height + t.Height
 }
